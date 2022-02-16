@@ -9,7 +9,7 @@ getArray
 medianOfThree 0 4 2
 getArray
  -10,5,0,-5,10
-medianOfThree 0 0 0
+medianOfThree 0 0 -1
 getArray
  -10,5,0,-5,10
 medianOfThree 0 2 1
