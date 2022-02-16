@@ -87,7 +87,6 @@ void parse_instruction(std::string temp, std::ofstream &ofs, QS* aptr) {
 	else if (command == "medianOfThree") { // perform median of three between the given indices
 		int l, r;
 		ss >> l >> r;
-		cout << "m " << l << " " << r;
 		ofs << temp << " " << aptr->medianOfThree(l, r) << std::endl;
 	}
 	else if (command == "partition") { // partition the elements in the given boundaries around the value at the given index
