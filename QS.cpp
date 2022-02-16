@@ -54,6 +54,7 @@ int QS::partition(int left, int right, int pivotIndex) {
         left >= right ||
         pivotIndex < left ||
         pivotIndex > right) {
+            cout << arr.size() << endl;
         return -1;
     }
     int pivot = arr[pivotIndex];
