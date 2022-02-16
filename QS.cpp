@@ -57,11 +57,9 @@ int QS::partition(int left, int right, int pivotIndex) {
         return -1;
     }
     int pivot = arr[pivotIndex];
-    //cout << "1 " << pivotIndex << " " << pivot << " " << getArray() << endl;
     swap(left, pivotIndex);
     int up = left + 1;
     int down = right - 1;
-    //cout << "2 " << getArray() << endl;
     do {
         while (arr[up] <= pivot && up < right) {
             up++;
@@ -73,9 +71,7 @@ int QS::partition(int left, int right, int pivotIndex) {
             swap(up, down);
         }
     } while (up < down);
-    //cout << "3 " << getArray() << endl;
     swap(left, down);
-    //cout << "4 " << getArray() << endl;
     return down;
 }
 
