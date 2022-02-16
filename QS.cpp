@@ -58,8 +58,8 @@ int QS::partition(int left, int right, int pivotIndex) {
         left < 0 ||
         right >= arr.size() ||
         left >= right ||
-        pivotIndex < left ||
-        pivotIndex > right) {
+        pivotIndex <= left ||
+        pivotIndex >= right) {
         return -1;
     }
     int pivot = arr[pivotIndex];
