@@ -25,7 +25,7 @@ void QS::qsort(int left, int right) {
     int pivot = medianOfThree(left, right);
     pivot = partition(left, right, pivot);
     cout << "l " << left << "r " << right << "p " << pivot << endl;
-    if (pivot = -1) {
+    if (pivot == -1) {
         cout << "return -1" << endl;
         return;
     }
@@ -54,7 +54,6 @@ int QS::partition(int left, int right, int pivotIndex) {
         left >= right ||
         pivotIndex < left ||
         pivotIndex > right) {
-            cout << arr.size() << endl;
         return -1;
     }
     int pivot = arr[pivotIndex];
