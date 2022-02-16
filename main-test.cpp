@@ -1,4 +1,4 @@
-#include "QS.h"
+/*#include "QS.h"
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -49,4 +49,4 @@ int main() {
 	cout << "Array "<<qsptr->getArray()<<endl;
   	//Should be Array 12,23,33,43,44,75,64,77,55
 	return 0;
-}
+}*/
