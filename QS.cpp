@@ -46,7 +46,6 @@ int QS::medianOfThree(int left, int right) {
 }
 
 int QS::partition(int left, int right, int pivotIndex) {
-    cout << left << " " << right << " " << pivotIndex << endl;
     if (arr.empty() ||
         left < 0 ||
         right >= arr.size() ||
