@@ -34,6 +34,12 @@ void QS::qsort(int left, int right) {
 }
 
 int QS::medianOfThree(int left, int right) {
+    if (arr.empty() ||
+        left < 0 ||
+        right >= arr.size() ||
+        left >= right) {
+        return -1;
+    }
     int pivotIndex = (left + right)/2;
     if (arr[left] > arr[pivotIndex]) {
         swap(left, pivotIndex);
