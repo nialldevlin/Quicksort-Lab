@@ -24,6 +24,9 @@ void QS::qsort(int left, int right) {
     }
     int pivot = medianOfThree(left, right);
     pivot = partition(left, right, pivot);
+    if (pivot = -1) {
+        return;
+    }
     qsort(left, pivot - 1);
     qsort(pivot + 1, right);
 }
