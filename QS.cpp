@@ -56,7 +56,7 @@ int QS::medianOfThree(int left, int right) {
 int QS::partition(int left, int right, int pivotIndex) {
     if (arr.empty() ||
         left < 0 ||
-        right >= arr.size() ||
+        right > arr.size() ||
         left >= right ||
         pivotIndex < left ||
         pivotIndex > right) {
@@ -65,7 +65,7 @@ int QS::partition(int left, int right, int pivotIndex) {
     int pivot = arr[pivotIndex];
     swap(left, pivotIndex);
     int up = left + 1;
-    int down = right - 1;
+    int down = right;
     do {
         while (arr[up] <= pivot && up < right) {
             up++;
@@ -73,11 +73,15 @@ int QS::partition(int left, int right, int pivotIndex) {
         while (arr[down] > pivot && down > left) {
             down--;
         }
+
         if (up < down) {
             swap(up, down);
         }
+        cout << getArray() << " pivot " << pivot  << " up " << up << " down " << down << endl;
     } while (up < down);
+    cout << "done" << down << endl;
     swap(left, down);
+    cout << "final " << getArray() << endl;
     return down;
 }
 
