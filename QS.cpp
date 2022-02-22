@@ -56,7 +56,7 @@ int QS::medianOfThree(int left, int right) {
 int QS::partition(int left, int right, int pivotIndex) {
     if (arr.empty() ||
         left < 0 ||
-        right >= arr.size() ||
+        right >=k arr.size() ||
         left >= right ||
         pivotIndex < left ||
         pivotIndex > right) {
